@@ -36,13 +36,13 @@ var cadmium_src = request.responseText;
 
 function get_profile_list() {
 	custom_profiles = [
+		"h264mpl30-dash-playready-prk-qc",
+		"h264mpl31-dash-playready-prk-qc",
+		"h264mpl40-dash-playready-prk-qc",
+		
 		"playready-h264mpl30-dash",
 		"playready-h264mpl31-dash",
 		"playready-h264mpl40-dash",
-		
-		"playready-h264hpl30-dash",
-		"playready-h264hpl31-dash",
-		"playready-h264hpl40-dash",
 		
 		"heaac-2-dash",
 		"heaac-2hq-dash",
@@ -109,7 +109,7 @@ function set_max_bitrate() {
 
 	if (!(VIDEO_SELECT && AUDIO_SELECT && BUTTON)){
 		window.dispatchEvent(new KeyboardEvent('keydown', {
-			keyCode: 66,
+			keyCode: 83,
 			ctrlKey: true,
 			altKey: true,
 			shiftKey: true,
