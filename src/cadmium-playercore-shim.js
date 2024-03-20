@@ -44,8 +44,10 @@ function get_profile_list() {
 		"playready-h264mpl31-dash",
 		"playready-h264mpl40-dash",
 		
-		"heaac-2-dash",
-		"heaac-2hq-dash",
+		"ddplus-2.0-dash",
+		"ddplus-5.1-dash",
+		"ddplus-5.1hq-dash",
+		"ddplus-atmos-dash",
 
 		"simplesdh",
 		"nflx-cmisc",
@@ -62,7 +64,7 @@ function get_profile_list() {
 	}
 
 	if (my_config["use_5.1"]) {
-		custom_profiles.push("heaac-5.1-dash");
+		custom_profiles.push("ddplus-atmos-dash");
 	}
 
 	return custom_profiles;
